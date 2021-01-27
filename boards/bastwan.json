@@ -1,0 +1,62 @@
+{
+  "build": {
+    "arduino": {
+        "ldscript": "No_Bootloader/flash_256KB.ld"
+    },
+    "core": "arduino",
+    "cpu": "cortex-m0plus",
+    "extra_flags": [
+      "-DSAMR34",
+      "-D__SAMR34J18B__",
+      "-DCDC_ONLY"    
+    ],
+    "usb_product": "Arduino BastWAN",
+    "hwids": [
+      [
+        "0x04D8",
+        "0xEB68"
+      ],
+      [
+        "0x04D8",
+        "0xEB68"
+      ],
+      [
+        "0x04D8",
+        "0xEB68"
+      ],
+      [
+        "0x04D8",
+        "0xEB68"
+      ]
+    ],
+    "f_cpu": "48000000L",
+    "mcu": "saml21j18b",
+    "variant": "bastwan"
+  },
+  "debug": {
+    "jlink_device": "ATSAML21J18",
+    "onboard_tools": [
+      "cmsis-dap"
+    ],
+    "openocd_chipname": "at91saml21j18",
+    "openocd_target": "at91samdXX",
+    "svd_path": "ATSAML21J18B.svd"
+  },
+  "frameworks": [
+    "arduino"
+  ],
+  "name": "BastWAN",
+  "upload": {
+    "maximum_ram_size": 32768,
+    "maximum_size": 262144,
+    "protocol": "cmsis-dap",
+    "protocols": [
+      "cmsis-dap",
+      "blackmagic",
+      "jlink",
+      "atmel-ice"
+    ]
+  },
+  "url": "https://github.com/ElectronicCats/BastWAN",
+  "vendor": "ElectronicCats"
+}
