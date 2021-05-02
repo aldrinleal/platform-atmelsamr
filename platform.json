@@ -42,8 +42,7 @@
     "framework-arduino-samr": {
       "type": "framework",
       "optional": true,
-      "owner": "aldrinleal",
-      "version": "~1.6.12"
+      "owner": "aldrinleal"
     },
     "framework-arduino-samd": {
       "type": "framework",
